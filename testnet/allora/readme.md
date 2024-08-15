@@ -1,5 +1,6 @@
 <h1 align="center">Allora Network Point Program</h1>
 
+- Thanks to [Moei]( https://github.com/0xmoei) for detailed guide
 > - Create a new wallet in Keplr & backup seed-phrase
 >
 > - Connect to the on-chain Point Program [Dashboard](https://app.allora.network?ref=eyJyZWZlcnJlcl9pZCI6IjVlNmEwMjc5LTcxNjEtNDhmYS04NGM3LWEzYzM0MGM4MGIzNyJ9)
@@ -13,7 +14,6 @@
 > - We get points by running a worker
 
 <h1 align="center">Price Prediction Worker Node</h1>
-
 
 ## System Requirements
 ![image](https://github.com/user-attachments/assets/56d300cd-4dde-42b2-b2ea-ae8a62b1339c)
@@ -163,8 +163,6 @@ inference:
 ```console
 docker compose logs -f inference
 ```
-
-# You are going to receive points in the [dashboard](https://app.allora.network/points/leaderboard) in the next few hours
 
 
 
