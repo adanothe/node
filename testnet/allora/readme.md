@@ -70,7 +70,7 @@ allorad keys add testkey --recover
 ```
 
 ## Get Faucet
-> Connect to Allora [dashboard](https://app.allora.network?ref=eyJyZWZlcnJlcl9pZCI6IjVlNmEwMjc5LTcxNjEtNDhmYS04NGM3LWEzYzM0MGM4MGIzNyJ9) to find your Allora address
+> Connect to Allora [dashboard](https://app.allora.network?ref=eyJyZWZlcnJlcl9pZCI6IjVlNmEwMjc5LTcxNjEtNDhmYS04NGM3LWEzYzM0MGM4MGIzNyJ9) to find your Allora address or run `allorad keys list`
 >
 > You can add Allora network to Keplr [here](https://explorer.edgenet.allora.network/wallet/suggest)
 > 
