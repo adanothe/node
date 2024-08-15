@@ -156,7 +156,7 @@ docker compose up -d --build
 ### Check logs
 worker:
 ```console
-docker compose logs -f worker
+docker logs -f --tail=20 worker
 ```
 
 inference:
