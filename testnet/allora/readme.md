@@ -119,6 +119,7 @@ docker compose logs -f inference
 ```
 
 ## You'll receive points on the [dashboard](https://app.allora.network/points/leaderboard) within the next few hours.
+## if within a few hours you haven't gotten any points you can try changing the model at guide [huggingface](https://github.com/adanothe/node/tree/main/testnet/allora/huggingface) 
 
 
 
