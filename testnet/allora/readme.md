@@ -86,60 +86,14 @@ git clone https://github.com/allora-network/basic-coin-prediction-node
 cd basic-coin-prediction-node
 ```
 
-### Create Config Worker
+### setup Config Worker
+- Replace SeedPhrase with your wallet seed phrase
 ```
 # Create new config file
-nano config.json
+curl -O https://raw.githubusercontent.com/adanothe/node/main/testnet/allora/config.json
+SEED_PHRASE="SeedPhrase"
+sed -i "s/\"addressRestoreMnemonic\": \"[^\"]*\"/\"addressRestoreMnemonic\": \"$SEED_PHRASE\"/" config.json
 ```
-
-**Paste below code in it**
-* Replace your wallet `Seed Phrase`
-* `addressKeyName` was set as testkey since we choose it in step: Add Wallet
-```
-{
-    "wallet": {
-        "addressKeyName": "testkey",
-        "addressRestoreMnemonic": "Seed Phrase",
-        "alloraHomeDir": "",
-        "gas": "1000000",
-        "gasAdjustment": 1.0,
-        "nodeRpc": "https://allora-testnet-rpc.polkachu.com/",
-        "maxRetries": 1,
-        "delay": 1,
-        "submitTx": false
-    },
-    "worker": [
-        {
-            "topicId": 1,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 5,
-            "parameters": {
-                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
-        {
-            "topicId": 2,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 5,
-            "parameters": {
-                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        },
-        {
-            "topicId": 7,
-            "inferenceEntrypointName": "api-worker-reputer",
-            "loopSeconds": 5,
-            "parameters": {
-                "InferenceEndpoint": "http://inference:8000/inference/{Token}",
-                "Token": "ETH"
-            }
-        }
-    ]
-}
-```
-Ctrl+X+Y+Enter to save & exit
 
 ### Run Worker
 ```console
@@ -163,6 +117,8 @@ inference:
 ```console
 docker compose logs -f inference
 ```
+
+## You'll receive points on the [dashboard](https://app.allora.network/points/leaderboard) within the next few hours.
 
 
 
