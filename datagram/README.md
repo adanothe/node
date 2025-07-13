@@ -57,7 +57,8 @@ Now, download the Datagram command-line interface (CLI) tool.
   * **Download the CLI:**
 
     ```bash
-    wget https://github.com/Datagram-Group/datagram-cli-release/releases/download/1.1.3/datagram-cli-x86_64-linux
+    wget https://github.com/Datagram-Group/datagram-cli-release/releases/latest/download/datagram-cli-x86_64-linux
+
     ```
 
 ## 7\. Make the CLI Executable
